@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: finalprojSIAFrontEnd
+    env: static
+    staticPublishPath: build
+    buildCommand: npm install && npm run build
+    startCommand: serve -s build
